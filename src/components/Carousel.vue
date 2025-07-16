@@ -72,13 +72,14 @@
 <script setup>
 import { Carousel, Slide, Navigation, Pagination } from "vue3-carousel";
 import "vue3-carousel/dist/carousel.css";
+import { getImagePath } from '@/utils/images';
 
 const projects = [
   {
     title: "How Is The Weather?",
     description:
       "Aplicação web para consulta de clima em tempo real em qualquer lugar do mundo, utilizando a API da OpenWeather. O usuário poderá buscar uma cidade e visualizar informações como temperatura atual, sensação térmica, umidade, velocidade do vento e previsão para os próximos dias, tudo de forma simples e visualmente agradável.",
-    img: "/img/projects/howisTheWeather.png",
+    img: getImagePath("projects/howisTheWeather.png"), 
     status: false,
     builds: [
       "Vue.js",
@@ -90,17 +91,15 @@ const projects = [
   },
   {
     title: "OrganizeMei",
-    description:
-      "Sistema web de gestão financeira desenvolvido para MEIs, autônomos e pequenos negócios. Permite controlar receitas, despesas, gerar boletos, acompanhar fluxo de caixa e receber alertas de vencimentos.",
-    img: "/img/projects/organizeMei.png",
+    description: "Sistema web de gestão financeira desenvolvido para MEIs, autônomos e pequenos negócios. Permite controlar receitas, despesas, gerar boletos, acompanhar fluxo de caixa e receber alertas de vencimentos.",
+    img: getImagePath("projects/organizeMei.png"),
     status: false,
     builds: ["Vue.js", "Laravel", "Inertia.js", "TailwindCSS", "DaisyUI"],
   },
   {
     title: "¿Cuánto Cuesta?",
-    description:
-      "Aplicação web simples e prática para conversão de moedas. O usuário seleciona a moeda de origem e a moeda de destino e visualiza o valor convertido em tempo real. Ideal para viajantes, estudantes e profissionais que lidam com diferentes moedas.",
-    img: "/img/projects/cuantoCuesta.png",
+    description: "Aplicação web simples e prática para conversão de moedas. O usuário seleciona a moeda de origem e a moeda de destino e visualiza o valor convertido em tempo real. Ideal para viajantes, estudantes e profissionais que lidam com diferentes moedas.",
+    img: getImagePath("projects/cuantoCuesta.png"),
     status: false,
     builds: ["Java", "Spring Boot", "Thymeleaf", "OpenExchangeRates API"],
   },
