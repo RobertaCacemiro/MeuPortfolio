@@ -46,7 +46,6 @@ onMounted(() => {
 </script>
 
 <template>
-  
   <div
     class="container mx-auto flex flex-col-reverse lg:flex-row items-center justify-center lg:h-screen lg:gap-70"
   >
@@ -91,6 +90,27 @@ onMounted(() => {
           <LinkedIn />
           <span>LinkedIn</span>
         </a>
+
+        <!-- Seta mobile -->
+        <div class="ml-5 flex items-center md:hidden">
+          <div class="animate-bounce">
+            <a href="#skills">
+              <svg
+                class="w-10 h-10 text-purple-500"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M7 13L12 18L17 13M7 6L12 11L17 6"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -104,6 +124,36 @@ onMounted(() => {
         ]"
         alt="Logo e Foto de Perfil"
       />
+    </div>
+
+    <!-- Seta desktop -->
+    <div
+      class="hidden md:flex absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center"
+    >
+      <a href="#skills" class="group flex flex-col items-center">
+        <div
+          class="animate-bounce flex flex-col items-center transition-transform duration-300 group-hover:scale-110"
+        >
+          <span
+            class="text-xs font-bold text-purple-400 mb-1 transition-colors duration-300 group-hover:text-purple-300"
+          >
+            VEJA MAIS
+          </span>
+          <svg
+            class="w-6 h-6 text-purple-500 transition-colors duration-300 group-hover:text-purple-300"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M19 14L12 21L5 14"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+      </a>
     </div>
   </div>
 </template>
