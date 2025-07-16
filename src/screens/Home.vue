@@ -9,6 +9,17 @@ import Typewriter from "typewriter-effect/dist/core"; // usamos o core diretamen
 // PDF 
 const pdfUrl = getFilePath('curriculo.pdf');
 
+// Scrool suave
+const smoothScroll = (target) => {
+  const element = document.querySelector(target);
+  if (element) {
+    element.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
+  }
+};
+
 // Efeito de digitação
 const typewriterTarget = ref(null);
 
@@ -101,7 +112,7 @@ onMounted(() => {
         <!-- Seta mobile -->
         <div class="ml-5 flex items-center md:hidden">
           <div class="animate-bounce">
-            <a href="#skills">
+            <a href="#skills" @click.prevent="smoothScroll('#skills')">
               <svg
                 class="w-10 h-10 text-purple-500"
                 viewBox="0 0 24 24"
@@ -137,7 +148,7 @@ onMounted(() => {
     <div
       class="hidden md:flex absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center"
     >
-      <a href="#skills" class="group flex flex-col items-center">
+      <a href="#skills" class="group flex flex-col items-center" @click.prevent="smoothScroll('#skills')">
         <div
           class="animate-bounce flex flex-col items-center transition-transform duration-300 group-hover:scale-110"
         >
