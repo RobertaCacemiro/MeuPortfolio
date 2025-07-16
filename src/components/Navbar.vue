@@ -1,6 +1,17 @@
 <script setup>
 import { ref } from "vue";
 
+// Scrool suave
+const smoothScroll = (target) => {
+  const element = document.querySelector(target);
+  if (element) {
+    element.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  }
+};
+
 const isOpen = ref(false);
 </script>
 
@@ -41,6 +52,7 @@ const isOpen = ref(false);
             <a
               href="#home"
               class="block py-2 px-3 !text-purple-500 rounded-sm md:p-0 hover:!text-purple-800"
+              @click.prevent="smoothScroll('#home')"
               >HOME</a
             >
           </li>
@@ -48,6 +60,7 @@ const isOpen = ref(false);
             <a
               href="#skills"
               class="block py-2 px-3 !text-purple-500 rounded-sm md:p-0 hover:!text-purple-800"
+              @click.prevent="smoothScroll('#skills')"
               >HABILIDADES</a
             >
           </li>
@@ -55,6 +68,7 @@ const isOpen = ref(false);
             <a
               href="#experience"
               class="block py-2 px-3 !text-purple-500 rounded-sm md:p-0 hover:!text-purple-800"
+              @click.prevent="smoothScroll('#experience')"
               >EXPERIÊNCIA</a
             >
           </li>
@@ -62,6 +76,7 @@ const isOpen = ref(false);
             <a
               href="#projects"
               class="block py-2 px-3 !text-purple-500 rounded-sm md:p-0 hover:!text-purple-800"
+              @click.prevent="smoothScroll('#projects')"
               >PROJETOS</a
             >
           </li>

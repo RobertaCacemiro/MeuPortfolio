@@ -1,5 +1,6 @@
 <script setup>
 import { Icon } from "@iconify/vue";
+import { getImagePath } from '@/utils/images';
 
 const stacks = [
   { icon: "logos:php", name: "PHP" },
@@ -16,7 +17,7 @@ const stacks = [
   { icon: "flowbite:flowbite-solid", name: "Flowbite" },
   { icon: "simple-icons:shadcnui", name: "Shadcn" },
   { icon: "devicon:bootstrap", name: "Bootstrap" },
-  { icon: "", name: "EasyUI", localPath: "/img/EasyUi.png" },
+  { icon: "", name: "EasyUI", localPath: getImagePath('EasyUi.png') },
 ];
 
 </script>
