@@ -5,7 +5,8 @@ Aqui você encontra uma amostra do meu trabalho, minhas habilidades e meus proje
 
 🔗 Acesse aqui: [https://seu-link.github.io](https://robertacacemiro.github.io/MeuPortfolio/)
 
-![Demonstração do Portfólio](./assets/demo.gif)
+![Demonstração do Portfólio](https://github.com/RobertaCacemiro/MeuPortfolio/raw/master/src/assets/demo.gif)
+
 
 https://github.com/RobertaCacemiro/MeuPortfolio/blob/master/src/assets/demo.gif?raw=true
 
