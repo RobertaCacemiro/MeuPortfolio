@@ -59,7 +59,7 @@ onMounted(() => {
     <!-- Texto -->
     <div class="max-w-xl lg:mt-10 m-6 text-left">
       <h2
-        class="font-extrabold tracking-tight leading-snug text-3xl lg:text-7xl lg:leading-tight"
+        class="font-extrabold tracking-tight leading-snug text-3xl lg:text-7xl lg:leading-tight text-white"
       >
         Olá, eu sou
         <br />
@@ -71,7 +71,7 @@ onMounted(() => {
         <span class="typewriter" ref="typewriterTarget"></span>
       </h2>
 
-      <p class="text-base lg:text-xl mb-8 mt-5">
+      <p class="text-base lg:text-xl mb-8 mt-5 text-white">
         Sou uma desenvolvedora Full Stack, apaixonada por criar experiências web
         intuitivas e visualmente impressionantes. Com uma combinação única de
         habilidades técnicas e criatividade, tenho confiança na minha capacidade

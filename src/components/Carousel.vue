@@ -22,14 +22,14 @@
         <!-- Container do conteúdo -->
         <div class="p-5 flex flex-col h-full">
           <h5
-            class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+            class="mb-2 text-2xl font-bold tracking-tight text-white"
           >
             {{ project.title }}
           </h5>
 
           <!-- Descrição  -->
           <p
-            class="mb-3 font-normal text-gray-700 dark:text-gray-400 flex-grow"
+            class="mb-3 font-normal text-white flex-grow"
           >
             {{ project.description }}
           </p>

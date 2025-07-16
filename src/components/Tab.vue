@@ -1,5 +1,5 @@
 <template>
-   <div class="w-full px-5 lg:px-0 lg:w-250 mt-10">
+  <div class="w-full px-5 lg:px-0 lg:w-250 mt-10">
     <div
       class="w-full lg:w-250 border border-[#000000] rounded-lg shadow-sm bg-[#000000]"
     >
@@ -15,12 +15,12 @@
           role="presentation"
         >
           <button
-            :class="[
-              'inline-block p-4 rounded-t-lg transition-colors duration-200',
+            class="inline-block p-4 rounded-t-lg transition-colors duration-200"
+            :style="
               activeTab === index
-                ? 'bg-purple-900 text-purple-600' // Aba ativa
-                : 'bg-purple-700 text-gray-500 hover:bg-purple-600', // Aba inativa
-            ]"
+                ? 'background-color: #1a1a1a; color: #9333ea;'
+                : 'background-color: #000000; color: #6b7280;'
+            "
             @click="activeTab = index"
             type="button"
           >
@@ -30,7 +30,7 @@
       </ul>
 
       <!-- Conteúdo -->
-      <div class="p-4 bg-[#000000] border border-[#000000] rounded-b-lg shadow">
+      <div class="p-4 bg-[#1a1a1a] border border-[#000000] rounded-b-lg shadow">
         <component :is="tabs[activeTab].component" />
       </div>
     </div>
