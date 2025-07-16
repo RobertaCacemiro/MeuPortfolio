@@ -1,8 +1,13 @@
 <script setup>
 import { ref, onMounted } from "vue";
+import { getImagePath } from '@/utils/images';
+import { getFilePath } from '@/utils/files'
 import Download from "/icon/Download.vue";
 import LinkedIn from "/icon/LinkedIn.vue";
 import Typewriter from "typewriter-effect/dist/core"; // usamos o core diretamente
+
+// PDF 
+const pdfUrl = getFilePath('curriculo.pdf');
 
 // Efeito de digitação
 const typewriterTarget = ref(null);
@@ -21,8 +26,10 @@ onMounted(() => {
 });
 
 // Alternância com rotação Y
-const images = ["/img/fotoPerfil.jpg", "/img/logo.png"];
-
+const images = [
+  getImagePath("fotoPerfil.jpg"),
+  getImagePath("logo.png")
+];
 const currentImage = ref(images[0]);
 const rotating = ref(false);
 
@@ -74,9 +81,9 @@ onMounted(() => {
 
       <div class="flex items-center">
         <a
-          href="/curriculo.pdf"
-          download
-          class="inline-flex px-5 py-3 text-base font-medium text-white bg-purple-500 rounded-lg hover:bg-purple-700"
+          :href="pdfUrl" 
+          download="CurriculoRobertaCacemiro.pdf"
+          class="inline-flex px-5 py-3 text-base font-medium text-white bg-purple-500 rounded-lg hover:bg-purple-700 botao-download"
         >
           <Download class="font-bold" />
           <p class="text-white">Currículo</p>
