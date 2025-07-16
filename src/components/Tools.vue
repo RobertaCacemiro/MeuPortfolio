@@ -15,7 +15,7 @@ const stacks = [
 
 <template>
   <div
-    class="grid max-w-screen-xl grid-cols-2 gap-6 p-4 mx-auto sm:grid-cols-3 lg:grid-cols-4 sm:p-8"
+    class="grid max-w-screen-xl grid-cols-2 gap-6 p-4 mx-auto sm:grid-cols-3 lg:grid-cols-4 sm:p-8 "
   >
     <div
       v-for="(stack, index) in stacks"

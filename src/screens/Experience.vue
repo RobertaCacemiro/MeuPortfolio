@@ -9,7 +9,7 @@ const experiences = [
     description:
       "Desenvolvimento de novas funcionalidades, correções e suporte técnico em sistemas SaaS do setor energético. Participação ativa em melhorias de performance, integração de APIs e aplicação de padrões de código.",
     current: true,
-    skills: ["HTML", "CSS", "JavaScript", "Git", "MySQL", "APIs REST"],
+    skills: ["PHP", "JavaScript", "HTML", "CSS", "Git", "MySQL", "APIs REST"],
   },
   {
     title: "Energy Simple",
@@ -18,7 +18,7 @@ const experiences = [
     description:
       "Atuação no desenvolvimento e manutenção de sistemas SaaS voltados à gestão do mercado livre de energia. Envolvimento com tarefas de frontend e backend, utilizando boas práticas e tecnologias modernas.",
     current: false,
-    skills: ["HTML", "CSS", "JavaScript", "Git", "MySQL"],
+    skills: ["PHP", "JavaScript", "HTML", "CSS", "Git", "MySQL"],
   },
   {
     title: "Clínica Toten",
@@ -62,7 +62,7 @@ const experiences = [
             <Calendar />
           </span>
           <h3
-            class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white"
+            class="flex items-center mb-1 text-lg font-semibold text-white"
           >
             {{ experience.title }}
             <span
@@ -72,11 +72,11 @@ const experiences = [
             >
           </h3>
           <time
-            class="block mb-2 text-sm font-normal text-gray-400 dark:text-gray-500"
+            class="block mb-2 text-sm font-normal text-white"
             >{{ experience.time }}</time
           >
           <p
-            class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400"
+            class="mb-4 text-base font-normal text-white"
           >
             {{ experience.description }}
           </p>
