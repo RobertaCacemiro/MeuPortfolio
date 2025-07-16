@@ -1,5 +1,21 @@
-# Vue 3 + Vite
+# Meu Portfólio
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Bem-vindo(a) ao repositório do meu portfólio pessoal! 
+Aqui você encontra uma amostra do meu trabalho, minhas habilidades e meus projetos em desenvolvimento.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+🔗 Acesse aqui: [https://seu-link.github.io](https://robertacacemiro.github.io/MeuPortfolio/)
+
+![Demonstração do Portfólio](./assets/demo.gif)
+
+## Tecnologias Utilizadas
+
+- Vue.js 
+- Tailwind CSS 
+- Flowbite
+
+## Licença
+Este projeto está licenciado sob a licença MIT.
+
+## Contato
+- E-mail: rubiarobertac@gmail.com
+- LinkedIn: www.linkedin.com/in/rúbia-cacemiro
