@@ -7,6 +7,8 @@ Aqui você encontra uma amostra do meu trabalho, minhas habilidades e meus proje
 
 ![Demonstração do Portfólio](./assets/demo.gif)
 
+https://github.com/RobertaCacemiro/MeuPortfolio/blob/master/src/assets/demo.gif?raw=true
+
 ## Tecnologias Utilizadas
 
 - Vue.js 
