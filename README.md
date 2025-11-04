@@ -3,7 +3,7 @@
 Bem-vindo(a) ao repositório do meu portfólio pessoal! 
 Aqui você encontra uma amostra do meu trabalho, minhas habilidades e meus projetos em desenvolvimento.
 
-🔗 Acesse aqui: [https://seu-link.github.io](https://robertacacemiro.github.io/MeuPortfolio/)
+🔗 Acesse aqui: [Portfólio - RúbiaCacemiro](https://robertacacemiro.github.io/MeuPortfolio/)
 
 ![Demonstração do Portfólio](https://github.com/RobertaCacemiro/MeuPortfolio/raw/master/src/assets/demo.gif)
 
